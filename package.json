@@ -8,7 +8,8 @@
     "start": "node dist/index.js",
     "lint": "tsc",
     "test": "vitest run",
-    "dev": "vitest"
+    "dev": "vitest",
+    "ci": "npm run lint && npm run test && npm run build"
   },
   "keywords": [],
   "author": "",
