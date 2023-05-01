@@ -1,8 +1,10 @@
 {
-  "name": "my-first-npm-package",
-  "version": "1.0.0",
+  "name": "@benleong0/my-first-npm-package",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --dts",
     "start": "node dist/index.js",
@@ -14,12 +16,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^18.16.3",
-    "typescript": "^5.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@changesets/cli": "^2.26.1",
     "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
     "vitest": "^0.30.1"
   }
 }
