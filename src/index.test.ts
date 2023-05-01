@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { add } from "./utils";
+import { add } from "./index";
 
 describe.each([
   { a: 1, b: 1, expected: 2 },

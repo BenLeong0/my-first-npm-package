@@ -1,6 +1,3 @@
-const main = () => {
-  console.log("hi");
-  console.log("wow");
+export const add = (a: number, b: number) => {
+  return a + b;
 };
-
-main();
